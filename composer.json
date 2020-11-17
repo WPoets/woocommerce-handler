@@ -1,0 +1,31 @@
+{
+    "name": "wpoets/woocommerce-handler",
+    "license": "GPL-3.0-or-later",
+    "type": "awesome-handler",
+    "description": "Handler for working with WooCommerce products in Awesome Enterprise",
+	"keywords": ["WordPress", "Low Code"," Awesome Enterprise","Shortcode","WooCommerce"],
+	"homepage": "https://getawesomestudio.com/",
+	"authors": [
+		{
+            "name": "WPoets Team",
+            "homepage": "https://www.wpoets.com"
+        }
+       
+    ],
+	 "support": {
+        "docs": "https://www.getawesomestudio.com/enterprise-tutorial/"
+    },
+    "require": {
+        "php": ">=7.0",
+        "composer/installers": "~1.0",
+        "oomphinc/composer-installers-extender": "^2.0"
+    },
+	 "extra": { 
+		"installer-name": "woocommerce"
+    },
+    "config": {
+		"process-timeout": 600,
+        "sort-packages": true
+    },
+	"prefer-stable": true
+}
