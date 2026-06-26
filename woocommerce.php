@@ -87,6 +87,9 @@ class aw2_woo_product{
 	
 	private function add_to_cart_html(){
 		$add_to_cart_url = $this->product->add_to_cart_url();
+		$yes = 'Yes';
+		$no = 'No';
+		$product_id = $this->product->get_id();
 		if($this->product->is_purchasable() && $this->product->is_in_stock())
 			$text= $yes;
 		else
