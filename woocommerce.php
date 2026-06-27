@@ -5,7 +5,7 @@ namespace aw2\woo;
 
 \aw2_library::add_service('woo.get','Run WooCommerce actions',['namespace'=>__NAMESPACE__]);
 
-function awesome2_woo_get($atts,$content=null,$shortcode){
+function awesome2_woo_get($atts,$content=null,$shortcode=null){
 	if(\aw2_library::pre_actions('all',$atts,$content,$shortcode)==false)return;
 	extract(\aw2_library::shortcode_atts( array(
 	'main'=>null,
